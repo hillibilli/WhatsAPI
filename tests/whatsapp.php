@@ -17,8 +17,8 @@ function fgets_u($pStdn)
 }
 
 $nickname = "WhatsAPI Test";
-$sender = 	""; // Mobile number with country code (but without + or 00)
-$imei = 	""; // MAC Address for iOS IMEI for other platform (Android/etc)
+$sender = 	"+41789307679"; // Mobile number with country code (but without + or 00)
+$imei = 	"E4:25:E7:15:66:82"; // MAC Address for iOS IMEI for other platform (Android/etc)
 $password =     ""; // Password you received from WhatsApp
 
 if ($argc < 2) {
@@ -101,6 +101,7 @@ $wa->sendGetRequestLastSeen($dst);
 
 echo "\n[] Send message to $dst: $msg\n";
 $wa->sendMessage($dst , $msg);
-echo "\n";
+echo "\n";fffg
+
 
 ?>
